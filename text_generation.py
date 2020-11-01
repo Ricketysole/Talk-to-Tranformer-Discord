@@ -12,4 +12,4 @@ def generate_text(text):
 	headers = {"Authorization": "Bearer {your token here}"}
 	response = requests.post(endpoint, data=data, headers=headers).json()
 
-	return (var + ' ' + response["data"]["text"])
+	return (text + ' ' + response["data"]["text"])
