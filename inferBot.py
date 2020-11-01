@@ -1,13 +1,9 @@
-
-import requests
 import discord
 import text_generation as generate
 from discord.ext import commands
-from discord import Game
 from discord.ext.commands import Bot
 
 bot = commands.Bot(command_prefix = '!')
-count = requests.get("http://gamers-control-2.000webhostapp.com/count.txt")
 
 @bot.event
 async def on_ready():
